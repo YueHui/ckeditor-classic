@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htdoc CKEditor</title>
+    <style>
+        #editor{width: 1000px; margin: 0 auto; min-height: 300px;}
+    </style>
+</head>
+<body>
+    <div id="editor">
+        <h1>这是h1</h1>
+        <h2>这是h2</h2>
+        <p>这是ppppp</p>
+        <p>111</p><h1>1111</h1><figure><audio src="https://htfile-audio-test.oss-cn-beijing.aliyuncs.com/data/ねこバス(2).mp3" controls></audio><div></div></figure>
+    </div>
+    <script src="./ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) ).then(editor=>{
+                window.editor = editor
+                //editor.execute('findReplace',{findText:'这是'})
+            })
+            .catch( error => {
+                console.error( error );
+            } );
+
+    </script>
+</body>
+</html>

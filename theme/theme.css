@@ -1,0 +1,4 @@
+/* Give the block toolbar button some space, moving it a few pixels away from the editable area. */
+.ck.ck-block-toolbar-button {
+	transform: translateX( calc(-1 * var(--ck-spacing-large)) );
+}
